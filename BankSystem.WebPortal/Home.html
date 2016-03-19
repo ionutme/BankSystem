@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bank System</title>
+
+    <script src="Scripts/jquery-2.2.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/underscore.min.js"></script>
+    <script src="Scripts/backbone.js"></script>
+</head>
+<body>
+    <h1>Transfer money from <i>your bank account</i> to another</h1>
+    <div>
+        <div id="elContainer">
+        </div>
+        <div id="elAccounts">
+        </div>
+    </div>
+
+    <!--TEMPLATES-->
+    <script type="text/template" id="welcome-template">
+        <h2>Hello <%= who %></h2>
+    </script>
+    <script type="text/template" id="account-template">
+        <label><%= id %></label>
+        <label><%= name %></label>
+        <label><%= category %></label>
+        <label><%= balance %></label>
+    </script>
+    <script type="text/template" id="accounts-collection-template">
+    </script>
+
+    <!--JAVASCRIPT-->
+    <script>
+        var accountBackend = Backbone.Model.extend({
+            schemaName: "account",
+            defaults: function() {
+                return {
+                    id: 0,
+                    name: null,
+                    category: null,
+                    balance: 0
+                };
+            }
+        });
+
+        AccountsCollectionBackend = Backbone.Collection.extend({
+            url: "http://localhost:50515/api/accounts/",
+            model: accountBackend
+        });
+
+        accounts = new AccountsCollectionBackend();
+        accounts.fetch();
+
+        AccountView = Backbone.View.extend({
+            template: _.template($('#account-template').html()),
+
+            initialize: function () {
+                this.listenTo(this.model, 'change', this.render);
+                this.listenTo(this.model, 'destroy', this.remove);
+            },
+
+            render: function () {
+                this.$el.html(this.template(this.model.toJSON()));
+                return this;
+            }
+        });
+
+        AccountsCollectionView = Backbone.View.extend({
+            // el - stands for element. Every view has a element associate in with HTML content will be rendered.
+            el: '#elAccounts',
+
+            // It's the first function called when this view it's instantiated.
+            initialize: function () {
+                this.render();
+
+                this.listenTo(this.model, 'change', this.render);
+                this.listenTo(this.model, 'add', this.render);
+            },
+
+            render: function () {
+                var list = this.$el.empty();
+
+                this.model.forEach(function (account) {
+                    var subview = new AccountView({ model: account });
+                    list.append(subview.render().$el);
+                    //console.log(account.toJSON());
+                });
+
+                return this;
+            }
+        });
+
+        WelcomeView = Backbone.View.extend({
+            // template which has the placeholder 'who' to be substitute later
+            template: _.template($('#welcome-template').html()),
+
+            // It's the first function called when this view it's instantiated.
+            initialize: function () {
+                this.render();
+            },
+
+            // $el - it's a cached jQuery object (el), in which you can use jQuery functions to push content. Like the Hello World in this case.
+            render: function () {
+                // render the function by substituting the varible 'who'.
+                this.$el.html(this.template({ who: 'Ionut Cristea' }));
+            }
+        });
+
+        var appView = new WelcomeView({ el: '#elContainer' });
+
+        var accountsCollectionView = new AccountsCollectionView({ model: accounts });
+    </script>
+</body>
+</html>

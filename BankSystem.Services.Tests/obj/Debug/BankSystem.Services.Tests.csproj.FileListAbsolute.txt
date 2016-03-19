@@ -1,0 +1,7 @@
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services.Tests\bin\Debug\BankSystem.Services.Tests.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services.Tests\bin\Debug\BankSystem.Services.Tests.pdb
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services.Tests\bin\Debug\nunit.framework.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services.Tests\bin\Debug\nunit.framework.xml
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services.Tests\obj\Debug\BankSystem.Services.Tests.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services.Tests\obj\Debug\BankSystem.Services.Tests.pdb
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services.Tests\obj\Debug\BankSystem.Services.Tests.csprojResolveAssemblyReference.cache

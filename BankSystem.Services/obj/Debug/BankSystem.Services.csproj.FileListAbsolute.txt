@@ -1,0 +1,14 @@
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\BankSystem.Services.dll.config
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\BankSystem.Services.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\BankSystem.Services.pdb
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\Newtonsoft.Json.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\System.Web.Http.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\Newtonsoft.Json.xml
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\System.Web.Http.xml
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\bin\System.Web.Http.WebHost.xml
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\obj\Debug\BankSystem.Services.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\obj\Debug\BankSystem.Services.pdb
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.Services\obj\Debug\BankSystem.Services.csprojResolveAssemblyReference.cache

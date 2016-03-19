@@ -1,0 +1,5 @@
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.WebPortal\bin\BankSystem.WebPortal.dll.config
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.WebPortal\bin\BankSystem.WebPortal.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.WebPortal\bin\BankSystem.WebPortal.pdb
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.WebPortal\obj\Debug\BankSystem.WebPortal.dll
+C:\Users\ionut.cristea\Desktop\test\BankingSystem\BankSystem\BankSystem.WebPortal\obj\Debug\BankSystem.WebPortal.pdb
